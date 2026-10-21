@@ -4,8 +4,13 @@ Homebrew formulae for gherlein projects.
 
 ```sh
 brew tap gherlein/tap
-brew install skills-mapper
+brew trust gherlein/tap   # required: Homebrew refuses to load formulae from an untrusted tap
+brew install <formula>
 ```
 
-The `skills-mapper` formula installs `sm` and `ms` from <https://github.com/gherlein/sm>.
 Formulae are published here by GoReleaser on each tagged release.
+
+| Formula | Installs | From |
+| --- | --- | --- |
+| `skills-mapper` | `sm`, `ms` | <https://github.com/gherlein/sm> |
+| `gofi` | `gofi` | <https://github.com/gherlein/gofi> |
