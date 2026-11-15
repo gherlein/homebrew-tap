@@ -5,12 +5,12 @@
 class SkillsMapper < Formula
   desc "Map one store of AI agent skills into every coding agent's skills folder"
   homepage "https://github.com/gherlein/sm"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gherlein/sm/releases/download/v0.1.0/skills-mapper_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c099116ce5e27da556bfa8b907aa76546ad98dc479159b4dd6ee2bdf56046dc7"
+      url "https://github.com/gherlein/sm/releases/download/v0.2.0/skills-mapper_0.2.0_darwin_amd64.tar.gz"
+      sha256 "6c22e7882e226e840d5e0c7a2323bb0207d62edfc5aead09baab509f4ec17ff6"
 
       define_method(:install) do
         bin.install "sm"
@@ -18,8 +18,8 @@ class SkillsMapper < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gherlein/sm/releases/download/v0.1.0/skills-mapper_0.1.0_darwin_arm64.tar.gz"
-      sha256 "38fdfa6eb596a374eed8154cd7257c407ef755156dadaaae085ce9e392c6b799"
+      url "https://github.com/gherlein/sm/releases/download/v0.2.0/skills-mapper_0.2.0_darwin_arm64.tar.gz"
+      sha256 "11e449fbc6e24d07589f7a5bc8f9cff95a45ea6f67fee7e4321a4f90854651f5"
 
       define_method(:install) do
         bin.install "sm"
@@ -30,16 +30,16 @@ class SkillsMapper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gherlein/sm/releases/download/v0.1.0/skills-mapper_0.1.0_linux_amd64.tar.gz"
-      sha256 "d94daa467cbd97c26cb0a710e3cfa42396e27747b667d63ad80d030bdeebc71b"
+      url "https://github.com/gherlein/sm/releases/download/v0.2.0/skills-mapper_0.2.0_linux_amd64.tar.gz"
+      sha256 "e593293603f75713e8ef664306eab510b94dc58bc1cd99f401cd3c7f0f81debc"
       define_method(:install) do
         bin.install "sm"
         bin.install "ms"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gherlein/sm/releases/download/v0.1.0/skills-mapper_0.1.0_linux_arm64.tar.gz"
-      sha256 "339165d6b861bc550486e662f410ceee99b4860d277f5a4cf2f5669ee3c8e26f"
+      url "https://github.com/gherlein/sm/releases/download/v0.2.0/skills-mapper_0.2.0_linux_arm64.tar.gz"
+      sha256 "70b5e13a3b0e010be1d40fa080f41d4d44eed9d6d6a212b2e8b12f628a60c08b"
       define_method(:install) do
         bin.install "sm"
         bin.install "ms"
