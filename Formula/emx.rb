@@ -5,20 +5,20 @@
 class Emx < Formula
   desc "Fast terminal editor with Emacs keybindings, built for working alongside coding agents"
   homepage "https://github.com/emergingrobotics/emx"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT OR Apache-2.0"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/emergingrobotics/emx/releases/download/v0.0.5/emx_0.0.5_linux_amd64.tar.gz"
-    sha256 "cb59dab4b05d578705037969bb82b28762b4eaab2a498b0db23690ea87445ce6"
+    url "https://github.com/emergingrobotics/emx/releases/download/v0.0.6/emx_0.0.6_linux_amd64.tar.gz"
+    sha256 "baa460f4d7d3f8696481d5cb23e4dcc547968ba21e3f556950565eb5c4d2a94b"
     define_method(:install) do
       bin.install "emx"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/emergingrobotics/emx/releases/download/v0.0.5/emx_0.0.5_linux_arm64.tar.gz"
-    sha256 "f1e850f8619d4c5acba4ebbaf39d7600da9934edc5d3a972bdb4b31cfc5d0c6c"
+    url "https://github.com/emergingrobotics/emx/releases/download/v0.0.6/emx_0.0.6_linux_arm64.tar.gz"
+    sha256 "34ca857fef7965716d0bce4fcd33b65e3eb47e61d300380af15e2721aed4ef1a"
     define_method(:install) do
       bin.install "emx"
     end
